@@ -4,7 +4,7 @@ exec schema-name.procedure-name();
 
 # exec store procedure with one out cursor
 
-varvar c1 refcursor;
+var c1 refcursor;
 exec AGREEMENTS.p_get_agreements(:c1)
 print c1;
 
